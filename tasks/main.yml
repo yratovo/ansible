@@ -1,2 +1,17 @@
 ---
 # tasks file for mon_dossier
+- name: status de ssh
+  service:
+    name: sshd
+    state: started
+
+- name: status de docker
+  service:
+    name: docker
+    state: restarted
+
+- name: install tmux
+  apt:
+    name: tmux
+    state: latest
+
