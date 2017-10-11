@@ -1,0 +1,8 @@
+---
+- name: adresse des machines
+  hosts: all
+  become: true
+  roles:
+    - ansible
+
+  
